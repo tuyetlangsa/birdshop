@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "530625645251",
+    "project_id": "birdbird-d22e3",
+    "storage_bucket": "birdbird-d22e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530625645251:android:ea5d11a56c226bc4d1f076",
+        "android_client_info": {
+          "package_name": "com.example.birdshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTf5D6gh-cYNDAQOU7WNQ1ArP69hjVODU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
