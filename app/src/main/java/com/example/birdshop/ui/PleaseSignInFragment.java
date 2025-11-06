@@ -1,0 +1,42 @@
+package com.example.birdshop.ui;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.example.onlyfanshop.R;
+import com.example.onlyfanshop.ui.login.LoginActivity;
+import com.example.onlyfanshop.ui.login.RegisterActivity;
+
+public class PleaseSignInFragment extends Fragment {
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_please_sign_in, container, false);
+        Button btnLogin = view.findViewById(R.id.btnLoginNow);
+        Button btnRegister = view.findViewById(R.id.btnRegister);
+        
+        btnLogin.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), LoginActivity.class));
+            requireActivity().finish();
+            requireActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        });
+        
+        if (btnRegister != null) {
+            btnRegister.setOnClickListener(v -> {
+                startActivity(new Intent(requireContext(), RegisterActivity.class));
+                requireActivity().finish();
+                requireActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            });
+        }
+        
+        return view;
+    }
+}
