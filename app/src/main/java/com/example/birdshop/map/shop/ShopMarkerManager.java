@@ -2,7 +2,7 @@ package com.example.birdshop.map.shop;
 
 import androidx.annotation.Nullable;
 
-import com.example.onlyfanshop.map.core.interfaces.MapProvider;
+import com.example.birdshop.map.core.interfaces.MapProvider;
 
 import java.util.HashMap;
 import java.util.Map;

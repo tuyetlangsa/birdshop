@@ -17,14 +17,14 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.ChatRoomAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ChatApi;
-import com.example.onlyfanshop.model.chat.ChatRoom;
-import com.example.onlyfanshop.service.ChatService;
-import com.example.onlyfanshop.service.RealtimeChatService;
-import com.example.onlyfanshop.utils.AppPreferences;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.ChatRoomAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ChatApi;
+import com.example.birdshop.model.chat.ChatRoom;
+import com.example.birdshop.service.ChatService;
+import com.example.birdshop.service.RealtimeChatService;
+import com.example.birdshop.utils.AppPreferences;
 
 import java.util.ArrayList;
 import java.util.List;

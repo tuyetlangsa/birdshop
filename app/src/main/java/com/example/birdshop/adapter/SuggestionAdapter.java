@@ -8,8 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.map.models.PlaceSuggestion;
+import com.example.birdshop.R;
+import com.example.birdshop.map.models.PlaceSuggestion;
 
 import java.util.List;
 

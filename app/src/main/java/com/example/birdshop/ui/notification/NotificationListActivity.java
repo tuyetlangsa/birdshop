@@ -14,13 +14,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.NotificationAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.NotificationApi;
-import com.example.onlyfanshop.model.NotificationDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.ui.login.LoginActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.NotificationAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.NotificationApi;
+import com.example.birdshop.model.NotificationDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.ui.login.LoginActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

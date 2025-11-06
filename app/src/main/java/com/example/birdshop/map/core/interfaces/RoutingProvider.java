@@ -1,6 +1,6 @@
 package com.example.birdshop.map.core.interfaces;
 
-import com.example.onlyfanshop.map.models.RouteResult;
+import com.example.birdshop.map.models.RouteResult;
 
 import java.util.List;
 

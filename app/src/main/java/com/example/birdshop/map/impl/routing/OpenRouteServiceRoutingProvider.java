@@ -1,9 +1,9 @@
 package com.example.birdshop.map.impl.routing;
 
-import com.example.onlyfanshop.map.config.MapConfig;
-import com.example.onlyfanshop.map.core.interfaces.RoutingProvider;
-import com.example.onlyfanshop.map.models.RouteResult;
-import com.example.onlyfanshop.map.util.HttpClient;
+import com.example.birdshop.map.config.MapConfig;
+import com.example.birdshop.map.core.interfaces.RoutingProvider;
+import com.example.birdshop.map.models.RouteResult;
+import com.example.birdshop.map.util.HttpClient;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

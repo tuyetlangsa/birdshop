@@ -17,15 +17,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.ProductManagementAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.model.BrandDTO;
-import com.example.onlyfanshop.model.CategoryDTO;
-import com.example.onlyfanshop.model.ProductDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.model.response.HomePageData;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.ProductManagementAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.model.BrandDTO;
+import com.example.birdshop.model.CategoryDTO;
+import com.example.birdshop.model.ProductDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.model.response.HomePageData;
 
 import java.util.ArrayList;
 import java.util.List;

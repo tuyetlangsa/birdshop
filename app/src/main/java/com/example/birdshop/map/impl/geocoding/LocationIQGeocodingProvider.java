@@ -1,9 +1,9 @@
 package com.example.birdshop.map.impl.geocoding;
 
-import com.example.onlyfanshop.map.config.MapConfig;
-import com.example.onlyfanshop.map.core.interfaces.GeocodingProvider;
-import com.example.onlyfanshop.map.models.GeocodeResult;
-import com.example.onlyfanshop.map.util.HttpClient;
+import com.example.birdshop.map.config.MapConfig;
+import com.example.birdshop.map.core.interfaces.GeocodingProvider;
+import com.example.birdshop.map.models.GeocodeResult;
+import com.example.birdshop.map.util.HttpClient;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

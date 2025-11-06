@@ -1,6 +1,6 @@
 package com.example.birdshop.ui.product;
 
-import com.example.onlyfanshop.model.Request.AddToCartRequest;
+import com.example.birdshop.model.Request.AddToCartRequest;
 
 
 import android.animation.Animator;
@@ -28,18 +28,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.CartItemApi;
-import com.example.onlyfanshop.api.PaymentApi;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.utils.AppEvents; // THÊM: import AppEvents
-import com.example.onlyfanshop.model.PaymentDTO;
-import com.example.onlyfanshop.model.ProductDetailDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.ui.payment.PaymentWebViewActivity;
-import com.example.onlyfanshop.utils.AppPreferences;
-import com.example.onlyfanshop.utils.NotificationHelper;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.CartItemApi;
+import com.example.birdshop.api.PaymentApi;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.utils.AppEvents; // THÊM: import AppEvents
+import com.example.birdshop.model.PaymentDTO;
+import com.example.birdshop.model.ProductDetailDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.ui.payment.PaymentWebViewActivity;
+import com.example.birdshop.utils.AppPreferences;
+import com.example.birdshop.utils.NotificationHelper;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
@@ -188,7 +188,7 @@ public class ProductDetailActivity extends AppCompatActivity {
                     .setTitle("Please sign in")
                     .setMessage("You need to sign in to continue.")
                     .setPositiveButton("Sign In", (dialog, which) -> {
-                        Intent intent = new Intent(this, com.example.onlyfanshop.ui.login.LoginActivity.class);
+                        Intent intent = new Intent(this, com.example.birdshop.ui.login.LoginActivity.class);
                         startActivity(intent);
                         finish(); // Nếu muốn đóng màn hình hiện tại sau khi sang LoginActivity
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

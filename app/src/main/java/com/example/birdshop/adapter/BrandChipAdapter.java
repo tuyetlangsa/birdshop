@@ -9,8 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.BrandDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.model.BrandDTO;
 
 import java.util.ArrayList;
 import java.util.List;

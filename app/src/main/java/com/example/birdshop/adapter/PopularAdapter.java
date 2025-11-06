@@ -13,9 +13,9 @@ import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.databinding.ViewholderPopularBinding;
-import com.example.onlyfanshop.model.ProductDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.databinding.ViewholderPopularBinding;
+import com.example.birdshop.model.ProductDTO;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

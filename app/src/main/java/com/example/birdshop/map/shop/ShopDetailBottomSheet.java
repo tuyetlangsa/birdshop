@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.onlyfanshop.R;
+import com.example.birdshop.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class ShopDetailBottomSheet extends BottomSheetDialogFragment {

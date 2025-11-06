@@ -18,10 +18,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.OrderDTO;
-import com.example.onlyfanshop.model.OrderItemLiteDTO;
-import com.example.onlyfanshop.ui.order.OrderDetailsActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.model.OrderDTO;
+import com.example.birdshop.model.OrderItemLiteDTO;
+import com.example.birdshop.ui.order.OrderDetailsActivity;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -56,7 +56,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("vi", "VN"));
 
         // Shop name and order status
-        holder.tvShopName.setText("OnlyFan Store");
+        holder.tvShopName.setText("Bird Shop");
         
         // Map order status to Vietnamese
         String statusText = mapOrderStatus(order.getOrderStatus());

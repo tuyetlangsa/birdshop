@@ -1,7 +1,7 @@
 package com.example.birdshop.map.impl.geocoding;
 
-import com.example.onlyfanshop.map.core.interfaces.GeocodingProvider;
-import com.example.onlyfanshop.map.models.GeocodeResult;
+import com.example.birdshop.map.core.interfaces.GeocodingProvider;
+import com.example.birdshop.map.models.GeocodeResult;
 
 import java.util.Arrays;
 import java.util.List;

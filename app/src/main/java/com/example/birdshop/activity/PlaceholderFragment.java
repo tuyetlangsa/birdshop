@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.onlyfanshop.R;
+import com.example.birdshop.R;
 
 public class PlaceholderFragment extends Fragment {
 

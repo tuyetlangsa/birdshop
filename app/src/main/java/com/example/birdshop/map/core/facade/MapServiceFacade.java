@@ -1,20 +1,20 @@
 package com.example.birdshop.map.core.facade;
 
-import static com.example.onlyfanshop.map.config.MapConfig.GeocodingPrimary.CHAINED;
+import static com.example.birdshop.map.config.MapConfig.GeocodingPrimary.CHAINED;
 
-import com.example.onlyfanshop.map.config.MapConfig;
-import com.example.onlyfanshop.map.core.interfaces.AutocompleteProvider;
-import com.example.onlyfanshop.map.core.interfaces.GeocodingProvider;
-import com.example.onlyfanshop.map.core.interfaces.RoutingProvider;
-import com.example.onlyfanshop.map.impl.autocomplete.GeoapifyAutocompleteProvider;
-import com.example.onlyfanshop.map.impl.autocomplete.LocationIQAutocompleteProvider;
-import com.example.onlyfanshop.map.impl.geocoding.ChainedGeocodingProvider;
-import com.example.onlyfanshop.map.impl.geocoding.GeoapifyGeocodingProvider;
-import com.example.onlyfanshop.map.impl.geocoding.LocationIQGeocodingProvider;
-import com.example.onlyfanshop.map.impl.geocoding.OpenCageGeocodingProvider;
-import com.example.onlyfanshop.map.impl.routing.ChainedRoutingProvider;
-import com.example.onlyfanshop.map.impl.routing.GraphHopperRoutingProvider;
-import com.example.onlyfanshop.map.impl.routing.OpenRouteServiceRoutingProvider;
+import com.example.birdshop.map.config.MapConfig;
+import com.example.birdshop.map.core.interfaces.AutocompleteProvider;
+import com.example.birdshop.map.core.interfaces.GeocodingProvider;
+import com.example.birdshop.map.core.interfaces.RoutingProvider;
+import com.example.birdshop.map.impl.autocomplete.GeoapifyAutocompleteProvider;
+import com.example.birdshop.map.impl.autocomplete.LocationIQAutocompleteProvider;
+import com.example.birdshop.map.impl.geocoding.ChainedGeocodingProvider;
+import com.example.birdshop.map.impl.geocoding.GeoapifyGeocodingProvider;
+import com.example.birdshop.map.impl.geocoding.LocationIQGeocodingProvider;
+import com.example.birdshop.map.impl.geocoding.OpenCageGeocodingProvider;
+import com.example.birdshop.map.impl.routing.ChainedRoutingProvider;
+import com.example.birdshop.map.impl.routing.GraphHopperRoutingProvider;
+import com.example.birdshop.map.impl.routing.OpenRouteServiceRoutingProvider;
 
 public class MapServiceFacade {
 

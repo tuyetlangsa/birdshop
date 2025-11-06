@@ -15,10 +15,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.VietnamProvinceApi;
-import com.example.onlyfanshop.api.VietnamProvinceApiClient;
-import com.example.onlyfanshop.model.VietnamProvinceResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.api.VietnamProvinceApi;
+import com.example.birdshop.api.VietnamProvinceApiClient;
+import com.example.birdshop.model.VietnamProvinceResponse;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;

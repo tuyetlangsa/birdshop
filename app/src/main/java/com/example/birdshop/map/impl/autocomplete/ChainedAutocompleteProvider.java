@@ -2,8 +2,8 @@ package com.example.birdshop.map.impl.autocomplete;
 
 import android.util.Log;
 
-import com.example.onlyfanshop.map.core.interfaces.AutocompleteProvider;
-import com.example.onlyfanshop.map.models.PlaceSuggestion;
+import com.example.birdshop.map.core.interfaces.AutocompleteProvider;
+import com.example.birdshop.map.models.PlaceSuggestion;
 
 import java.util.Arrays;
 import java.util.List;

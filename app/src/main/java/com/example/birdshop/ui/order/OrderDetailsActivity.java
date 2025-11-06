@@ -12,21 +12,21 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
+import com.example.birdshop.R;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
 import android.content.SharedPreferences;
 
-import com.example.onlyfanshop.activity.DashboardActivity;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.OrderApi;
-import com.example.onlyfanshop.databinding.ActivityOrderDetailsBinding;
-import com.example.onlyfanshop.adapter.OrderItemsAdapter;
-import com.example.onlyfanshop.model.CartItemDTO;
-import com.example.onlyfanshop.model.OrderDetailsDTO;
-import com.example.onlyfanshop.model.ProductDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.utils.AppPreferences;
+import com.example.birdshop.activity.DashboardActivity;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.OrderApi;
+import com.example.birdshop.databinding.ActivityOrderDetailsBinding;
+import com.example.birdshop.adapter.OrderItemsAdapter;
+import com.example.birdshop.model.CartItemDTO;
+import com.example.birdshop.model.OrderDetailsDTO;
+import com.example.birdshop.model.ProductDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.utils.AppPreferences;
 
 import java.text.NumberFormat;
 import java.util.List;
@@ -66,7 +66,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         binding.btnBack.setOnClickListener(v -> {
             if (fromPaymentSuccess) {
                 // Nếu vào từ dialog thanh toán thành công → quay về home
-                Intent intent = new Intent(this, com.example.onlyfanshop.activity.DashboardActivity.class);
+                Intent intent = new Intent(this, com.example.birdshop.activity.DashboardActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
@@ -187,7 +187,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         if (order.getItemsLite() != null && !order.getItemsLite().isEmpty()) {
             // Prefer lite list if server provides it
             allItems = new java.util.ArrayList<>();
-            for (com.example.onlyfanshop.model.OrderItemLiteDTO l : order.getItemsLite()) {
+            for (com.example.birdshop.model.OrderItemLiteDTO l : order.getItemsLite()) {
                 CartItemDTO ci = new CartItemDTO();
                 ci.setQuantity(l.getQuantity());
                 ci.setPrice(l.getPrice());
@@ -247,7 +247,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         }
 
         // Store Name (default)
-        binding.tvStoreName.setText("OnlyFan Store");
+        binding.tvStoreName.setText("Bird shop");
     }
 
     private String mapOrderStatus(String status) {

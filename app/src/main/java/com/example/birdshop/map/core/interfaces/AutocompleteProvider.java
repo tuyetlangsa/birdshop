@@ -1,6 +1,6 @@
 package com.example.birdshop.map.core.interfaces;
 
-import com.example.onlyfanshop.map.models.PlaceSuggestion;
+import com.example.birdshop.map.models.PlaceSuggestion;
 
 import java.util.List;
 

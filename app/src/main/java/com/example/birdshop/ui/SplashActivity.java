@@ -8,9 +8,9 @@ import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.activity.AdminActivity;
-import com.example.onlyfanshop.activity.DashboardActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.activity.AdminActivity;
+import com.example.birdshop.activity.DashboardActivity;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

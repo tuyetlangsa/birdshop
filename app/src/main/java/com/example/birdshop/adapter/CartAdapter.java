@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.databinding.ViewholderCartBinding;
-import com.example.onlyfanshop.model.CartItemDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.databinding.ViewholderCartBinding;
+import com.example.birdshop.model.CartItemDTO;
 
 import java.text.NumberFormat;
 import java.util.List;

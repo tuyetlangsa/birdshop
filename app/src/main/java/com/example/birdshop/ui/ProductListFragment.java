@@ -16,16 +16,16 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.ProductAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.model.ProductDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.model.response.HomePageData;
-import com.example.onlyfanshop.ViewModel.ProductFilterViewModel;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.ProductAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.model.ProductDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.model.response.HomePageData;
+import com.example.birdshop.ViewModel.ProductFilterViewModel;
 // IMPORTANT: import the detail activity from its package
-import com.example.onlyfanshop.ui.product.ProductDetailActivity;
+import com.example.birdshop.ui.product.ProductDetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,7 +95,7 @@ public class ProductListFragment extends Fragment {
             startActivity(ProductDetailActivity.newIntent(requireContext(), pid));
             requireActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             // Alternatively (no import needed):
-            // startActivity(com.example.onlyfanshop.ui.product.ProductDetailActivity.newIntent(requireContext(), pid));
+            // startActivity(com.example.birdshop.ui.product.ProductDetailActivity.newIntent(requireContext(), pid));
         });
         recyclerProducts.setLayoutManager(new GridLayoutManager(requireContext(), 2));
         recyclerProducts.setAdapter(productAdapter);

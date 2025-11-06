@@ -165,7 +165,7 @@
             android:id="@+id/tvCashbackTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OnlyFan Shop"
+            android:text="Bird Shop"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/black"

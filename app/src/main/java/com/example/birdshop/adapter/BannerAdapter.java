@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.BannerModel;
+import com.example.birdshop.R;
+import com.example.birdshop.model.BannerModel;
 
 import java.util.ArrayList;
 import java.util.List;

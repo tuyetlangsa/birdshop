@@ -15,12 +15,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.OrderApi;
-import com.example.onlyfanshop.model.OrderDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.ui.order.OrderDetailsActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.OrderApi;
+import com.example.birdshop.model.OrderDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.ui.order.OrderDetailsActivity;
 
 import java.text.NumberFormat;
 import java.util.List;

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import com.example.onlyfanshop.map.core.interfaces.MapProvider;
+import com.example.birdshop.map.core.interfaces.MapProvider;
 
 import org.osmdroid.config.Configuration;
 import org.osmdroid.events.MapEventsReceiver;

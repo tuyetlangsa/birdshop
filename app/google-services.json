@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "530625645251",
+    "firebase_url": "https://birdbird-d22e3-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "birdbird-d22e3",
     "storage_bucket": "birdbird-d22e3.firebasestorage.app"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.birdshop"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "530625645251-7b048f7jpgp3hgbl561j4o0ebbs3rpmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.birdshop",
+            "certificate_hash": "5e4b343f87296c233526708f213487c7e8beaaab"
+          }
+        },
+        {
+          "client_id": "530625645251-mkjcd00lva0g3protqjt365dtk9m1au6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDTf5D6gh-cYNDAQOU7WNQ1ArP69hjVODU"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530625645251-mkjcd00lva0g3protqjt365dtk9m1au6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

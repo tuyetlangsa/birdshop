@@ -70,7 +70,7 @@
     </style>
 
     <!-- Splash Screen Theme -->
-    <style name="SplashTheme" parent="Theme.OnlyFanshop">
+    <style name="SplashTheme" parent="Theme.Birdshop">
         <item name="android:windowBackground">@drawable/splash_background</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>

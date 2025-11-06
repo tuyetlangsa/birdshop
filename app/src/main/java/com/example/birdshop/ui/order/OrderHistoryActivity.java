@@ -11,12 +11,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.OrderAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.OrderApi;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.model.OrderDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.OrderAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.OrderApi;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.model.OrderDTO;
 
 import java.util.List;
 

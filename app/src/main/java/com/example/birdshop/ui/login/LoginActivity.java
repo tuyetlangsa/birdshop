@@ -18,15 +18,15 @@ import androidx.activity.result.contract.ActivityResultContracts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.activity.AdminActivity;
-import com.example.onlyfanshop.activity.DashboardActivity;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.UserApi;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.model.Request.LoginRequest;
-import com.example.onlyfanshop.model.UserDTO;
-import com.example.onlyfanshop.service.NotificationListenerService;
+import com.example.birdshop.R;
+import com.example.birdshop.activity.AdminActivity;
+import com.example.birdshop.activity.DashboardActivity;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.UserApi;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.model.Request.LoginRequest;
+import com.example.birdshop.model.UserDTO;
+import com.example.birdshop.service.NotificationListenerService;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -231,12 +231,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void initializeGoogleSignIn() {
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("473512036602-cjfsbvk041lgmticjn0q5c89t5jeo4rg.apps.googleusercontent.com") // Web client ID từ Firebase Console
+                .requestIdToken("530625645251-mkjcd00lva0g3protqjt365dtk9m1au6.apps.googleusercontent.com") // Web client ID từ Firebase Console
                 .requestEmail()
                 .requestProfile()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        Log.d("GoogleSignIn", "Google Sign-In initialized with client ID: 473512036602-cjfsbvk041lgmticjn0q5c89t5jeo4rg.apps.googleusercontent.com");
+        Log.d("GoogleSignIn", "Google Sign-In initialized with client ID: 530625645251-mkjcd00lva0g3protqjt365dtk9m1au6.apps.googleusercontent.com");
     }
 
     // removed initializeFacebookLogin

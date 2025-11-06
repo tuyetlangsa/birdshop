@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class AppPreferences {
-    private static final String PREF_NAME = "OnlyFanshopPrefs";
+    private static final String PREF_NAME = "Bird Shop";
     private static final String KEY_CART_COUNT = "cartCount";
     private static final String KEY_USER_ID = "userId";
     private static final String KEY_TOKEN = "token";

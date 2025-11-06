@@ -8,6 +8,9 @@ android {
     compileSdk {
         version = release(36)
     }
+    buildFeatures {
+        viewBinding= true
+    }
 
     defaultConfig {
         applicationId = "com.example.birdshop"
@@ -31,6 +34,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -118,6 +124,4 @@ dependencies {
     implementation("com.github.duanhong169:drawabletoolbox:1.0.7")
     implementation("androidx.vectordrawable:vectordrawable:1.1.0")
     implementation("androidx.vectordrawable:vectordrawable-animated:1.1.0")
-
-
 }

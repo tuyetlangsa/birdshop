@@ -16,13 +16,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.map.config.KeyStorage;
-import com.example.onlyfanshop.map.core.facade.MapServiceFacade;
-import com.example.onlyfanshop.map.core.interfaces.MapProvider;
-import com.example.onlyfanshop.map.impl.map.OsmMapProvider;
-import com.example.onlyfanshop.map.models.GeocodeResult;
-import com.example.onlyfanshop.map.models.PlaceSuggestion;
+import com.example.birdshop.R;
+import com.example.birdshop.map.config.KeyStorage;
+import com.example.birdshop.map.core.facade.MapServiceFacade;
+import com.example.birdshop.map.core.interfaces.MapProvider;
+import com.example.birdshop.map.impl.map.OsmMapProvider;
+import com.example.birdshop.map.models.GeocodeResult;
+import com.example.birdshop.map.models.PlaceSuggestion;
 
 import java.util.List;
 
@@ -127,7 +127,7 @@ public class LocationPickerActivity extends AppCompatActivity {
         progressSearch.setVisibility(View.VISIBLE);
         btnSearchLocation.setEnabled(false);
 
-        mapService.autocomplete().suggest(query, new com.example.onlyfanshop.map.core.interfaces.AutocompleteProvider.Callback() {
+        mapService.autocomplete().suggest(query, new com.example.birdshop.map.core.interfaces.AutocompleteProvider.Callback() {
             @Override
             public void onSuccess(List<PlaceSuggestion> results) {
                 runOnUiThread(() -> {
@@ -165,7 +165,7 @@ public class LocationPickerActivity extends AppCompatActivity {
         }
 
         reverseGeocodeRunnable = () -> {
-            mapService.geocoding().reverseGeocode(currentLat, currentLng, new com.example.onlyfanshop.map.core.interfaces.GeocodingProvider.Callback() {
+            mapService.geocoding().reverseGeocode(currentLat, currentLng, new com.example.birdshop.map.core.interfaces.GeocodingProvider.Callback() {
                 @Override
                 public void onSuccess(List<GeocodeResult> results) {
                     runOnUiThread(() -> {

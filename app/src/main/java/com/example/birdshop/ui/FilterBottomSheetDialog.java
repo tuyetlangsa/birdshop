@@ -14,9 +14,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.BrandDTO;
-import com.example.onlyfanshop.model.CategoryDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.model.BrandDTO;
+import com.example.birdshop.model.CategoryDTO;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.button.MaterialButton;

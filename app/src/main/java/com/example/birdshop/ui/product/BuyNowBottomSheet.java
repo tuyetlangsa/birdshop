@@ -16,14 +16,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.CartItemApi;
-import com.example.onlyfanshop.databinding.LayoutBottomSheetBuyNowBinding;
-import com.example.onlyfanshop.model.CartItemDTO;
-import com.example.onlyfanshop.model.Request.AddToCartRequest;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.ui.payment.ConfirmPaymentActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.CartItemApi;
+import com.example.birdshop.databinding.LayoutBottomSheetBuyNowBinding;
+import com.example.birdshop.model.CartItemDTO;
+import com.example.birdshop.model.Request.AddToCartRequest;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.ui.payment.ConfirmPaymentActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
@@ -125,7 +125,7 @@ public class BuyNowBottomSheet extends BottomSheetDialogFragment {
                     .setTitle("Please sign in")
                     .setMessage("You need to sign in to continue.")
                     .setPositiveButton("Sign In", (dialog, which) -> {
-                        Intent intent = new Intent(requireContext(), com.example.onlyfanshop.ui.login.LoginActivity.class);
+                        Intent intent = new Intent(requireContext(), com.example.birdshop.ui.login.LoginActivity.class);
                         startActivity(intent);
                     })
                     .setNegativeButton("Cancel", null);

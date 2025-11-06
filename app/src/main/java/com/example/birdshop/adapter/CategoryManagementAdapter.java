@@ -9,8 +9,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.databinding.ViewholderCategoryManagementBinding;
-import com.example.onlyfanshop.model.CategoryManagementDTO;
+import com.example.birdshop.databinding.ViewholderCategoryManagementBinding;
+import com.example.birdshop.model.CategoryManagementDTO;
 
 import java.util.List;
 

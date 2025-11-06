@@ -2,8 +2,8 @@ package com.example.birdshop;
 
 import android.app.Application;
 
-import com.example.onlyfanshop.service.FirebaseAuthManager;
-import com.example.onlyfanshop.utils.LocaleUtil;
+import com.example.birdshop.service.FirebaseAuthManager;
+import com.example.birdshop.utils.LocaleUtil;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

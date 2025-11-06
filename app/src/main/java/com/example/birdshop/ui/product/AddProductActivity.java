@@ -10,14 +10,14 @@ import android.widget.*;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.model.BrandDTO;
-import com.example.onlyfanshop.model.CategoryDTO;
-import com.example.onlyfanshop.model.ProductDTO;
-import com.example.onlyfanshop.model.Request.ProductRequest;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.model.BrandDTO;
+import com.example.birdshop.model.CategoryDTO;
+import com.example.birdshop.model.ProductDTO;
+import com.example.birdshop.model.Request.ProductRequest;
+import com.example.birdshop.model.response.ApiResponse;
 
 import java.io.File;
 import java.io.FileOutputStream;

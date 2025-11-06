@@ -31,21 +31,21 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.BannerAdapter;
-import com.example.onlyfanshop.adapter.PopularAdapter;
-import com.example.onlyfanshop.adapter.ProductAdapter;
-import com.example.onlyfanshop.adapter.SearchSuggestionAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.api.ProfileApi;
-import com.example.onlyfanshop.model.BannerModel;
-import com.example.onlyfanshop.model.ProductDTO;
-import com.example.onlyfanshop.model.User;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.model.response.HomePageData;
-import com.example.onlyfanshop.model.response.UserResponse;
-import com.example.onlyfanshop.ui.product.ProductDetailActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.BannerAdapter;
+import com.example.birdshop.adapter.PopularAdapter;
+import com.example.birdshop.adapter.ProductAdapter;
+import com.example.birdshop.adapter.SearchSuggestionAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.api.ProfileApi;
+import com.example.birdshop.model.BannerModel;
+import com.example.birdshop.model.ProductDTO;
+import com.example.birdshop.model.User;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.model.response.HomePageData;
+import com.example.birdshop.model.response.UserResponse;
+import com.example.birdshop.ui.product.ProductDetailActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
@@ -66,7 +66,7 @@ public class HomeFragment extends Fragment {
 
     private static final String TAG = "HomeFragment";
 
-    private static final String DB_URL = "https://onlyfan-f9406-default-rtdb.asia-southeast1.firebasedatabase.app";
+    private static final String DB_URL = "https://birdbird-d22e3-default-rtdb.asia-southeast1.firebasedatabase.app/";
     private static final String BANNER_NODE = "Banner";
 
     // Banner
@@ -166,12 +166,12 @@ public class HomeFragment extends Fragment {
             SharedPreferences sharedPreferences = requireContext().getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
 
             if (userId == -1) {
-                Intent intent = new Intent(requireContext(), com.example.onlyfanshop.ui.login.LoginActivity.class);
+                Intent intent = new Intent(requireContext(), com.example.birdshop.ui.login.LoginActivity.class);
                 startActivity(intent);
                 return;
             }
 
-            Intent intent = new Intent(requireContext(), com.example.onlyfanshop.ui.notification.NotificationListActivity.class);
+            Intent intent = new Intent(requireContext(), com.example.birdshop.ui.notification.NotificationListActivity.class);
             intent.putExtra("userId", userId);
             startActivity(intent);
         });
@@ -180,7 +180,7 @@ public class HomeFragment extends Fragment {
         tvUserName = v.findViewById(R.id.tvUserName);
         tvUserName.setOnClickListener(view -> {
             if ("Sign in".equals(tvUserName.getText().toString())) {
-                Intent intent = new Intent(requireContext(), com.example.onlyfanshop.ui.login.LoginActivity.class);
+                Intent intent = new Intent(requireContext(), com.example.birdshop.ui.login.LoginActivity.class);
                 startActivity(intent);
                 requireActivity().finish();
             }
@@ -687,8 +687,8 @@ public class HomeFragment extends Fragment {
     }
 
     private void fetchUnreadNotificationCount(int userId, TextView badgeView) {
-        com.example.onlyfanshop.api.NotificationApi api =
-                ApiClient.getPrivateClient(requireContext()).create(com.example.onlyfanshop.api.NotificationApi.class);
+        com.example.birdshop.api.NotificationApi api =
+                ApiClient.getPrivateClient(requireContext()).create(com.example.birdshop.api.NotificationApi.class);
 
         api.getUnreadCount(userId).enqueue(new Callback<Long>() {
             @Override

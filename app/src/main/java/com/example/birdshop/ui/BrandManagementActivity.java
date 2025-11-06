@@ -19,15 +19,15 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.BrandAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.BrandApi;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.databinding.ActivityBrandManagementBinding;
-import com.example.onlyfanshop.model.BrandDTO;
-import com.example.onlyfanshop.model.BrandManagementDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.BrandAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.BrandApi;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.databinding.ActivityBrandManagementBinding;
+import com.example.birdshop.model.BrandDTO;
+import com.example.birdshop.model.BrandManagementDTO;
+import com.example.birdshop.model.response.ApiResponse;
 
 import java.io.File;
 import java.io.FileOutputStream;

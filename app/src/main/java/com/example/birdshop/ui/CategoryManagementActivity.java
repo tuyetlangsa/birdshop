@@ -8,12 +8,12 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.example.onlyfanshop.adapter.CategoryManagementAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.CategoryApi;
-import com.example.onlyfanshop.databinding.ActivityCategoryManagementBinding;
-import com.example.onlyfanshop.model.CategoryManagementDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.adapter.CategoryManagementAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.CategoryApi;
+import com.example.birdshop.databinding.ActivityCategoryManagementBinding;
+import com.example.birdshop.model.CategoryManagementDTO;
+import com.example.birdshop.model.response.ApiResponse;
 
 import java.util.ArrayList;
 import java.util.List;

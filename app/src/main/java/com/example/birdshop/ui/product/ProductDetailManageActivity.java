@@ -14,11 +14,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ProductApi;
-import com.example.onlyfanshop.model.ProductDetailDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ProductApi;
+import com.example.birdshop.model.ProductDetailDTO;
+import com.example.birdshop.model.response.ApiResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;

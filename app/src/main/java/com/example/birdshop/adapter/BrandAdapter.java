@@ -9,8 +9,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.databinding.ViewholderBrandBinding;
-import com.example.onlyfanshop.model.BrandManagementDTO;
+import com.example.birdshop.databinding.ViewholderBrandBinding;
+import com.example.birdshop.model.BrandManagementDTO;
 
 import java.util.List;
 

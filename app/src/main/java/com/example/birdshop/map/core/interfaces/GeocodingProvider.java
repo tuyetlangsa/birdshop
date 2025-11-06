@@ -1,6 +1,6 @@
 package com.example.birdshop.map.core.interfaces;
 
-import com.example.onlyfanshop.map.models.GeocodeResult;
+import com.example.birdshop.map.models.GeocodeResult;
 
 import java.util.List;
 

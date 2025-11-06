@@ -15,11 +15,11 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.NotificationApi;
-import com.example.onlyfanshop.model.NotificationDTO;
-import com.example.onlyfanshop.ui.order.OrderDetailsActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.NotificationApi;
+import com.example.birdshop.model.NotificationDTO;
+import com.example.birdshop.ui.order.OrderDetailsActivity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

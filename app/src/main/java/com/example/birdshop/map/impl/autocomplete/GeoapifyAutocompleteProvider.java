@@ -2,10 +2,10 @@ package com.example.birdshop.map.impl.autocomplete;
 
 import android.util.Log;
 
-import com.example.onlyfanshop.map.config.MapConfig;
-import com.example.onlyfanshop.map.core.interfaces.AutocompleteProvider;
-import com.example.onlyfanshop.map.models.PlaceSuggestion;
-import com.example.onlyfanshop.map.util.HttpClient;
+import com.example.birdshop.map.config.MapConfig;
+import com.example.birdshop.map.core.interfaces.AutocompleteProvider;
+import com.example.birdshop.map.models.PlaceSuggestion;
+import com.example.birdshop.map.util.HttpClient;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

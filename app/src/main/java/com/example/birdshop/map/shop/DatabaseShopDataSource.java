@@ -2,10 +2,10 @@ package com.example.birdshop.map.shop;
 
 import android.util.Log;
 
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.StoreLocationApi;
-import com.example.onlyfanshop.model.StoreLocation;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.StoreLocationApi;
+import com.example.birdshop.model.StoreLocation;
+import com.example.birdshop.model.response.ApiResponse;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,9 +6,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.activity.DashboardActivity;
-import com.example.onlyfanshop.ui.order.OrderDetailsActivity; // 👈 import activity hiển thị chi tiết đơn hàng
+import com.example.birdshop.R;
+import com.example.birdshop.activity.DashboardActivity;
+import com.example.birdshop.ui.order.OrderDetailsActivity; // 👈 import activity hiển thị chi tiết đơn hàng
 
 public class PaymentResultActivity extends AppCompatActivity {
 

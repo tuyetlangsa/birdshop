@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.model.CategoryDTO;
+import com.example.birdshop.model.CategoryDTO;
 
 import java.util.ArrayList;
 import java.util.List;

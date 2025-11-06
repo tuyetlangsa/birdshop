@@ -12,13 +12,13 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.ui.BrandManagementActivity;
-import com.example.onlyfanshop.ui.CategoryManagementActivity;
-import com.example.onlyfanshop.ui.product.ProductManagementActivity;
-import com.example.onlyfanshop.ui.chat.ChatListActivity;
-import com.example.onlyfanshop.activity.StoreManagementActivity;
-import com.example.onlyfanshop.ui.user.UserManagementActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.ui.BrandManagementActivity;
+import com.example.birdshop.ui.CategoryManagementActivity;
+import com.example.birdshop.ui.product.ProductManagementActivity;
+import com.example.birdshop.ui.chat.ChatListActivity;
+import com.example.birdshop.activity.StoreManagementActivity;
+import com.example.birdshop.ui.user.UserManagementActivity;
 
 /**
  * A simple {@link Fragment} subclass.

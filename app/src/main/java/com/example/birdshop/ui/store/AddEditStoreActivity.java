@@ -13,12 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.activity.LocationPickerActivity;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.StoreLocationApi;
-import com.example.onlyfanshop.model.StoreLocation;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.activity.LocationPickerActivity;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.StoreLocationApi;
+import com.example.birdshop.model.StoreLocation;
+import com.example.birdshop.model.response.ApiResponse;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 

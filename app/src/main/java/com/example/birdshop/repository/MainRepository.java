@@ -14,13 +14,13 @@ import com.google.firebase.database.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainRepository {
+    public class MainRepository {
 
-    private static final String DB_URL =
-            "https://onlyfan-f9406-default-rtdb.asia-southeast1.firebasedatabase.app";
+        private static final String DB_URL =
+                "https://birdbird-d22e3-default-rtdb.asia-southeast1.firebasedatabase.app";
 
-    // Dùng instance với URL đúng region
-    private final FirebaseDatabase firebaseDatabase =
+        // Dùng instance với URL đúng region
+        private final FirebaseDatabase firebaseDatabase =
             FirebaseDatabase.getInstance(DB_URL);
 
     // Lưu lại listener nếu bạn muốn gỡ sau này (tránh leak khi Fragment destroy)

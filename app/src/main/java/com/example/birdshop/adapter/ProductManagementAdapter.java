@@ -1,7 +1,7 @@
 package com.example.birdshop.adapter;
 
-import static com.example.onlyfanshop.adapter.ProductAdapter.asGlideUrlWithAuth;
-import static com.example.onlyfanshop.adapter.ProductAdapter.resolveImageUrl;
+import static com.example.birdshop.adapter.ProductAdapter.asGlideUrlWithAuth;
+import static com.example.birdshop.adapter.ProductAdapter.resolveImageUrl;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +15,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.ProductDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.model.ProductDTO;
 
 import java.util.List;
 

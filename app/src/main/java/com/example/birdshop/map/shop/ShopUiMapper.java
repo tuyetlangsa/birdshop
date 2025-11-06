@@ -1,6 +1,6 @@
 package com.example.birdshop.map.shop;
 
-import com.example.onlyfanshop.model.Attraction;
+import com.example.birdshop.model.Attraction;
 
 import java.util.ArrayList;
 import java.util.List;

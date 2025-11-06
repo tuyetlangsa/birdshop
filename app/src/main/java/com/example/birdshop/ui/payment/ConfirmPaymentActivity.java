@@ -25,23 +25,23 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.adapter.CartAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.CartItemApi;
-import com.example.onlyfanshop.api.PaymentApi;
-import com.example.onlyfanshop.api.ProfileApi;
-import com.example.onlyfanshop.api.UserApi;
-import com.example.onlyfanshop.api.VietnamProvinceApi;
-import com.example.onlyfanshop.api.VietnamProvinceApiClient;
-import com.example.onlyfanshop.databinding.ActivityConfirmPaymentBinding;
-import com.example.onlyfanshop.ui.order.OrderDetailsActivity;
-import com.example.onlyfanshop.model.CartItemDTO;
-import com.example.onlyfanshop.model.PaymentDTO;
-import com.example.onlyfanshop.model.UserDTO;
-import com.example.onlyfanshop.model.VietnamProvinceResponse;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.model.response.UserResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.adapter.CartAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.CartItemApi;
+import com.example.birdshop.api.PaymentApi;
+import com.example.birdshop.api.ProfileApi;
+import com.example.birdshop.api.UserApi;
+import com.example.birdshop.api.VietnamProvinceApi;
+import com.example.birdshop.api.VietnamProvinceApiClient;
+import com.example.birdshop.databinding.ActivityConfirmPaymentBinding;
+import com.example.birdshop.ui.order.OrderDetailsActivity;
+import com.example.birdshop.model.CartItemDTO;
+import com.example.birdshop.model.PaymentDTO;
+import com.example.birdshop.model.UserDTO;
+import com.example.birdshop.model.VietnamProvinceResponse;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.model.response.UserResponse;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -324,7 +324,7 @@ public class ConfirmPaymentActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<UserResponse> call, Response<UserResponse> response) {
                 if (response.isSuccessful() && response.body() != null && response.body().getData() != null) {
-                    com.example.onlyfanshop.model.User user = response.body().getData();
+                    com.example.birdshop.model.User user = response.body().getData();
                     
                     // Save user info to SharedPreferences for fallback
                     SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -361,7 +361,7 @@ public class ConfirmPaymentActivity extends AppCompatActivity {
         String email = sharedPreferences.getString("email", "");
         String phoneNumber = sharedPreferences.getString("phoneNumber", "");
         
-        com.example.onlyfanshop.model.UserDTO user = new UserDTO();
+        com.example.birdshop.model.UserDTO user = new UserDTO();
         user.setUsername(username);
         user.setEmail(email);
         user.setPhoneNumber(phoneNumber);
@@ -372,8 +372,8 @@ public class ConfirmPaymentActivity extends AppCompatActivity {
     private void displayUserInfo(Object userObj) {
         String username = null, email = null, phoneNumber = null, address = null;
         
-        if (userObj instanceof com.example.onlyfanshop.model.User) {
-            com.example.onlyfanshop.model.User user = (com.example.onlyfanshop.model.User) userObj;
+        if (userObj instanceof com.example.birdshop.model.User) {
+            com.example.birdshop.model.User user = (com.example.birdshop.model.User) userObj;
             username = user.getUsername();
             email = user.getEmail();
             phoneNumber = user.getPhoneNumber();
@@ -617,7 +617,7 @@ public class ConfirmPaymentActivity extends AppCompatActivity {
         btnClose.setOnClickListener(v -> {
             dialog.dismiss();
             // Chuyển về DashboardActivity (home) thay vì chỉ finish
-            Intent intent = new Intent(ConfirmPaymentActivity.this, com.example.onlyfanshop.activity.DashboardActivity.class);
+            Intent intent = new Intent(ConfirmPaymentActivity.this, com.example.birdshop.activity.DashboardActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();

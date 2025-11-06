@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.UserApi;
-import com.example.onlyfanshop.model.Request.RegisterRequest;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.utils.Validation;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.UserApi;
+import com.example.birdshop.model.Request.RegisterRequest;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.utils.Validation;
 
 import java.util.Map;
 

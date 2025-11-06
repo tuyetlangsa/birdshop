@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
-import com.example.onlyfanshop.adapter.AttractionAdapter;
-import com.example.onlyfanshop.model.Attraction;
+import com.example.birdshop.adapter.AttractionAdapter;
+import com.example.birdshop.model.Attraction;
 
 import java.util.Collections;
 import java.util.List;

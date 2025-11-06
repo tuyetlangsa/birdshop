@@ -6,11 +6,11 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.ui.ProfileFragment;
-import com.example.onlyfanshop.ui.admin.ManagerFragment;
-import com.example.onlyfanshop.ui.admin.OrderFragment;
-import com.example.onlyfanshop.ui.admin.StoreFragment;
+import com.example.birdshop.R;
+import com.example.birdshop.ui.ProfileFragment;
+import com.example.birdshop.ui.admin.ManagerFragment;
+import com.example.birdshop.ui.admin.OrderFragment;
+import com.example.birdshop.ui.admin.StoreFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AdminActivity extends AppCompatActivity {

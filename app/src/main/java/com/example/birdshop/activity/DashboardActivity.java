@@ -17,15 +17,15 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.ui.CategoryFragment;
-import com.example.onlyfanshop.ui.HomeFragment;
-import com.example.onlyfanshop.ui.MapFragment;
-import com.example.onlyfanshop.ui.ProfileFragment;
-import com.example.onlyfanshop.ui.cart.CartFragment;
-import com.example.onlyfanshop.utils.AppEvents;
-import com.example.onlyfanshop.utils.BadgeUtils;
-import com.example.onlyfanshop.utils.LocaleHelper;
+import com.example.birdshop.R;
+import com.example.birdshop.ui.CategoryFragment;
+import com.example.birdshop.ui.HomeFragment;
+import com.example.birdshop.ui.MapFragment;
+import com.example.birdshop.ui.ProfileFragment;
+import com.example.birdshop.ui.cart.CartFragment;
+import com.example.birdshop.utils.AppEvents;
+import com.example.birdshop.utils.BadgeUtils;
+import com.example.birdshop.utils.LocaleHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -160,7 +160,7 @@ public class DashboardActivity extends AppCompatActivity {
             if (currentSelectedId != id) {
                 // Kiểm tra nếu click cart mà chưa login thì redirect đến profile
                 if (id == R.id.nav_car) {
-                    String token = com.example.onlyfanshop.api.ApiClient.getToken(this);
+                    String token = com.example.birdshop.api.ApiClient.getToken(this);
                     if (token == null || token.trim().isEmpty()) {
                         // Chưa login - redirect đến profile
                         // Cập nhật currentSelectedId trước để tránh loop
@@ -218,7 +218,7 @@ public class DashboardActivity extends AppCompatActivity {
             fragmentToShow = categoryFragment;
         } else if (id == R.id.nav_car) {
             // Kiểm tra token trước khi mở cart
-            String token = com.example.onlyfanshop.api.ApiClient.getToken(this);
+            String token = com.example.birdshop.api.ApiClient.getToken(this);
             if (token == null || token.trim().isEmpty()) {
                 // Chưa login - không xử lý ở đây, đã được xử lý trong onItemSelectedListener
                 // Fallback: hiển thị profile

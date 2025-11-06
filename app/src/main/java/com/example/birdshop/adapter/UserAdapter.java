@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.UserDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.model.UserDTO;
 
 import java.util.List;
 

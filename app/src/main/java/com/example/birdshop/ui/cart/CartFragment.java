@@ -20,15 +20,15 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.activity.DashboardActivity;
-import com.example.onlyfanshop.adapter.CartAdapter;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.CartItemApi;
-import com.example.onlyfanshop.databinding.FragmentCartBinding;
-import com.example.onlyfanshop.model.CartItemDTO;
-import com.example.onlyfanshop.model.response.ApiResponse;
-import com.example.onlyfanshop.ui.payment.ConfirmPaymentActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.activity.DashboardActivity;
+import com.example.birdshop.adapter.CartAdapter;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.CartItemApi;
+import com.example.birdshop.databinding.FragmentCartBinding;
+import com.example.birdshop.model.CartItemDTO;
+import com.example.birdshop.model.response.ApiResponse;
+import com.example.birdshop.ui.payment.ConfirmPaymentActivity;
 
 import java.io.Serializable;
 import java.text.NumberFormat;
@@ -68,11 +68,11 @@ public class CartFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // Kiểm tra token đăng nhập
-        String token = com.example.onlyfanshop.api.ApiClient.getToken(requireContext());
+        String token = com.example.birdshop.api.ApiClient.getToken(requireContext());
         if (token == null || token.trim().isEmpty()) {
             requireActivity().getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.mainFragmentContainer, new com.example.onlyfanshop.ui.PleaseSignInFragment(), "PLEASE_SIGN_IN")
+                    .replace(R.id.mainFragmentContainer, new com.example.birdshop.ui.PleaseSignInFragment(), "PLEASE_SIGN_IN")
                     .commit();
             return; // Dừng xử lý tiếp
         }

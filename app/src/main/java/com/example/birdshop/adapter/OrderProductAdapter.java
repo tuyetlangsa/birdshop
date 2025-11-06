@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.model.OrderItemLiteDTO;
+import com.example.birdshop.R;
+import com.example.birdshop.model.OrderItemLiteDTO;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

@@ -9,11 +9,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.api.ApiClient;
-import com.example.onlyfanshop.api.ProfileApi;
-import com.example.onlyfanshop.model.Request.ChangePasswordRequest;
-import com.example.onlyfanshop.model.response.ApiResponse;
+import com.example.birdshop.R;
+import com.example.birdshop.api.ApiClient;
+import com.example.birdshop.api.ProfileApi;
+import com.example.birdshop.model.Request.ChangePasswordRequest;
+import com.example.birdshop.model.response.ApiResponse;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 

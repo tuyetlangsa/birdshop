@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.onlyfanshop.R;
-import com.example.onlyfanshop.ui.login.LoginActivity;
-import com.example.onlyfanshop.ui.login.RegisterActivity;
+import com.example.birdshop.R;
+import com.example.birdshop.ui.login.LoginActivity;
+import com.example.birdshop.ui.login.RegisterActivity;
 
 public class PleaseSignInFragment extends Fragment {
     @Nullable

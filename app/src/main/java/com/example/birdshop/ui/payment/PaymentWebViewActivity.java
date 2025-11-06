@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.onlyfanshop.R;
+import com.example.birdshop.R;
 
 public class PaymentWebViewActivity extends AppCompatActivity {
 
