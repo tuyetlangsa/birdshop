@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "530625645251-bqvt39ga9aj1psdtfhqp1ia0eukp583h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.birdshop",
+            "certificate_hash": "40f223d3a33d10fb57ded33a711768d2f44266b9"
+          }
+        },
+        {
           "client_id": "530625645251-mkjcd00lva0g3protqjt365dtk9m1au6.apps.googleusercontent.com",
           "client_type": 3
         }
