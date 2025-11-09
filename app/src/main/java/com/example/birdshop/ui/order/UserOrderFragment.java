@@ -244,7 +244,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -270,7 +272,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -296,7 +300,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -322,7 +328,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -348,7 +356,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -375,7 +385,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -401,7 +413,9 @@ public class UserOrderFragment extends Fragment {
             @Override
             public void onFailure(Call<ApiResponse<List<OrderDTO>>> call, Throwable t) {
                 showEmptyState(true);
-                Toast.makeText(requireContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Lỗi mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

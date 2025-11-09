@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.birdshop.R;
+import com.example.birdshop.config.AppConfig;
 import com.example.birdshop.model.ProductDTO;
 
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.List;
 public class ProductManagementAdapter extends RecyclerView.Adapter<ProductManagementAdapter.ProductViewHolder>{
     private List<ProductDTO> productList;
     private OnProductActionListener listener;
-    private static final String BASE_IMAGE_HOST = "http://10.0.2.2:8080";
+    private static final String BASE_IMAGE_HOST = AppConfig.BASE_URL_NO_SLASH;
 
     // Bật nếu ảnh nằm sau auth và cần gắn Bearer token
     private static final boolean IMAGES_REQUIRE_AUTH = false;

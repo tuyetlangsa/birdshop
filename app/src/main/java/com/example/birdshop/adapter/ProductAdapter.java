@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
 import com.example.birdshop.R;
+import com.example.birdshop.config.AppConfig;
 import com.example.birdshop.model.ProductDTO;
 
 import java.text.NumberFormat;
@@ -32,7 +33,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
     private final OnItemClick onItemClick;
 
     // Cập nhật host này cho đúng backend của bạn (không có slash ở cuối)
-    private static final String BASE_IMAGE_HOST = "http://10.0.2.2:8080";
+    private static final String BASE_IMAGE_HOST = AppConfig.BASE_URL_NO_SLASH;
 
     // Bật nếu ảnh nằm sau auth và cần gắn Bearer token
     private static final boolean IMAGES_REQUIRE_AUTH = false;

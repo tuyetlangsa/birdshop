@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import androidx.annotation.Nullable;
 
+import com.example.birdshop.config.AppConfig;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -30,7 +31,7 @@ public final class ApiClient {
 //            ? "http://10.0.2.2:8080/"
 //            : "http://192.168.100.47:8080/";
 //
-   private static volatile String BASE_URL = "http://10.0.2.2:8080/";
+   private static volatile String BASE_URL = AppConfig.BASE_URL;
 
     private ApiClient() {}
 
@@ -153,7 +154,9 @@ public final class ApiClient {
         b.addInterceptor(chain -> {
             Request original = chain.request();
             Request.Builder builder = original.newBuilder()
-                    .header("Accept", "application/json");
+                    .header("Accept", "application/json")
+                    .header("ngrok-skip-browser-warning", "true") // Fix ngrok free
+                    .header("User-Agent", "BirdShop-Android"); // Thêm user agent
             // Chỉ set Content-Type cho request có body
             String method = original.method();
             if ("POST".equalsIgnoreCase(method)

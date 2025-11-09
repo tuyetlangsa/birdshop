@@ -510,7 +510,9 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onFailure(@NonNull Call<ApiResponse<HomePageData>> call, @NonNull Throwable t) {
                         setPopularLoading(false);
-                        popularAdapter.submitList(new ArrayList<>());
+                        if (popularAdapter != null) {
+                            popularAdapter.submitList(new ArrayList<>());
+                        }
                     }
                 });
     }
@@ -556,7 +558,9 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onFailure(@NonNull Call<ApiResponse<HomePageData>> call, @NonNull Throwable t) {
                         setProductsLoading(false);
-                        productAdapter.submitList(new ArrayList<>());
+                        if (productAdapter != null) {
+                            productAdapter.submitList(new ArrayList<>());
+                        }
                     }
                 });
     }
@@ -626,7 +630,7 @@ public class HomeFragment extends Fragment {
                     public void onFailure(@NonNull Call<ApiResponse<HomePageData>> call,
                                           @NonNull Throwable t) {
                         setSuggestLoading(false);
-                        if (!isAdded()) return;
+                        if (!isAdded() || suggestAdapter == null) return;
                         suggestAdapter.submitList(new ArrayList<>());
                         recyclerSuggest.setVisibility(View.GONE);
                     }

@@ -14,6 +14,7 @@ import com.bumptech.glide.load.model.LazyHeaders;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.birdshop.R;
+import com.example.birdshop.config.AppConfig;
 import com.example.birdshop.databinding.ViewholderPopularBinding;
 import com.example.birdshop.model.ProductDTO;
 
@@ -33,7 +34,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.VH> {
     private Context context;
 
     // Nếu server trả ảnh tương đối, thêm host ở đây
-    private static final String BASE_IMAGE_HOST = "http://10.0.2.2:8080";
+    private static final String BASE_IMAGE_HOST = AppConfig.BASE_URL_NO_SLASH;
     // Nếu ảnh yêu cầu Bearer token → bật true
     private static final boolean IMAGES_REQUIRE_AUTH = false;
     // Static NumberFormat để tránh tạo object mới mỗi lần

@@ -236,8 +236,8 @@ public class ProfileFragment extends Fragment {
 
             @Override
             public void onFailure(@NonNull Call<UserResponse> call, @NonNull Throwable t) {
-                if (!isAdded()) return;
-                Toast.makeText(requireContext(), "Connection failed: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                if (!isAdded() || getContext() == null) return;
+                Toast.makeText(getContext(), "Connection failed: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -375,11 +375,21 @@ public class ProfileFragment extends Fragment {
                 .addOnSuccessListener(aVoid -> {
                     Log.w("MLKit", "Old model has been deleted. Retrying download...");
                     mlKitTranslator.downloadModelIfNeeded()
-                            .addOnSuccessListener(v -> Toast.makeText(requireContext(), "Model reloaded successfully.", Toast.LENGTH_LONG).show())
-                            .addOnFailureListener(re -> Toast.makeText(requireContext(), "Error reloading model: " + re.getMessage(), Toast.LENGTH_LONG).show());
+                            .addOnSuccessListener(v -> {
+                                if (isAdded() && getContext() != null) {
+                                    Toast.makeText(getContext(), "Model reloaded successfully.", Toast.LENGTH_LONG).show();
+                                }
+                            })
+                            .addOnFailureListener(re -> {
+                                if (isAdded() && getContext() != null) {
+                                    Toast.makeText(getContext(), "Error reloading model: " + re.getMessage(), Toast.LENGTH_LONG).show();
+                                }
+                            });
                 })
                 .addOnFailureListener(delE -> {
-                    Toast.makeText(requireContext(), "Error deleting model: " + delE.getMessage(), Toast.LENGTH_LONG).show();
+                    if (isAdded() && getContext() != null) {
+                        Toast.makeText(getContext(), "Error deleting model: " + delE.getMessage(), Toast.LENGTH_LONG).show();
+                    }
                     Log.e("MLKit", "Error deleting model: " + delE.getMessage());
                 });
     }
@@ -395,15 +405,19 @@ public class ProfileFragment extends Fragment {
         mlKitTranslator.translate(textToTranslate)
                 .addOnSuccessListener(translatedText -> {
                     // Success: Update TextView with translation
-                    tvProfileName.setText(translatedText);
-                    Toast.makeText(requireContext(), "Translation successful: " + translatedText, Toast.LENGTH_LONG).show();
+                    if (isAdded() && getContext() != null) {
+                        tvProfileName.setText(translatedText);
+                        Toast.makeText(getContext(), "Translation successful: " + translatedText, Toast.LENGTH_LONG).show();
+                    }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         // Failure: Handle error
                         Log.e("MLKit", "Translation error: " + e.getMessage());
-                        Toast.makeText(requireContext(), "Translation error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        if (isAdded() && getContext() != null) {
+                            Toast.makeText(getContext(), "Translation error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
     }
@@ -486,7 +500,9 @@ public class ProfileFragment extends Fragment {
 
             @Override
             public void onFailure(Call<ApiResponse<Map<String, Long>>> call, Throwable t) {
-                Toast.makeText(requireContext(), "Không thể tải trạng thái đơn hàng", Toast.LENGTH_SHORT).show();
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Không thể tải trạng thái đơn hàng", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

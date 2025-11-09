@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.load.model.LazyHeaders;
 import com.example.birdshop.R;
+import com.example.birdshop.config.AppConfig;
 import com.example.birdshop.model.CartItemDTO;
 import com.example.birdshop.model.ProductDTO;
 
@@ -86,11 +87,10 @@ public class OrderItemsAdapter extends RecyclerView.Adapter<OrderItemsAdapter.VH
         if (raw == null) return null;
         String u = raw.trim();
         if (u.isEmpty()) return null;
-        u = u.replace("http://localhost:", "http://10.0.2.2:")
-                .replace("http://127.0.0.1:", "http://10.0.2.2:");
+        // Không cần replace localhost nữa vì dùng ngrok
         if (u.startsWith("http://") || u.startsWith("https://")) return u;
-        if (u.startsWith("/")) return "http://10.0.2.2:8080" + u;
-        return "http://10.0.2.2:8080/" + u;
+        if (u.startsWith("/")) return AppConfig.BASE_URL_NO_SLASH + u;
+        return AppConfig.BASE_URL_NO_SLASH + "/" + u;
     }
 
     private static Object buildGlideModel(Context ctx, String url) {

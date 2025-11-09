@@ -20,6 +20,7 @@ import android.content.SharedPreferences;
 import com.example.birdshop.activity.DashboardActivity;
 import com.example.birdshop.api.ApiClient;
 import com.example.birdshop.api.OrderApi;
+import com.example.birdshop.config.AppConfig;
 import com.example.birdshop.databinding.ActivityOrderDetailsBinding;
 import com.example.birdshop.adapter.OrderItemsAdapter;
 import com.example.birdshop.model.CartItemDTO;
@@ -91,11 +92,10 @@ public class OrderDetailsActivity extends AppCompatActivity {
         if (raw == null) return null;
         String u = raw.trim();
         if (u.isEmpty()) return null;
-        u = u.replace("http://localhost:", "http://10.0.2.2:")
-             .replace("http://127.0.0.1:", "http://10.0.2.2:");
+        // Không cần replace localhost nữa vì dùng ngrok
         if (u.startsWith("http://") || u.startsWith("https://")) return u;
-        if (u.startsWith("/")) return "http://10.0.2.2:8080" + u;
-        return "http://10.0.2.2:8080/" + u;
+        if (u.startsWith("/")) return AppConfig.BASE_URL_NO_SLASH + u;
+        return AppConfig.BASE_URL_NO_SLASH + "/" + u;
     }
 
     private void loadOrderDetails(int orderId) {

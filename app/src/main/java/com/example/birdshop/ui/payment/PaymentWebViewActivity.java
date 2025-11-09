@@ -26,19 +26,29 @@ public class PaymentWebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment_web_view);
-
-        webView = findViewById(R.id.webView);
-        progressBar = findViewById(R.id.progressBar);
-
+        
         String url = getIntent().getStringExtra(EXTRA_URL);
+        
+        // Try to use WebView, fallback to external browser if WebView is not available
+        try {
+            setContentView(R.layout.activity_payment_web_view);
+            webView = findViewById(R.id.webView);
+            progressBar = findViewById(R.id.progressBar);
 
-        // Bật JavaScript (rất quan trọng cho các cổng thanh toán)
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setDomStorageEnabled(true);
-        webView.getSettings().setUseWideViewPort(true);
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+            // Bật JavaScript (rất quan trọng cho các cổng thanh toán)
+            webView.getSettings().setJavaScriptEnabled(true);
+            webView.getSettings().setDomStorageEnabled(true);
+            webView.getSettings().setUseWideViewPort(true);
+            webView.getSettings().setLoadWithOverviewMode(true);
+            webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+        } catch (Exception e) {
+            Log.e("PaymentWebView", "WebView not available, opening in external browser", e);
+            // WebView not available, open in external browser
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(browserIntent);
+            finish();
+            return;
+        }
 
 
         webView.setWebViewClient(new WebViewClient() {
