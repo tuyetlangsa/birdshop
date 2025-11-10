@@ -63,7 +63,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_onlyfan"
+                    android:src="@drawable/ic_bird"
                     android:visibility="gone"
                     app:tint="@color/colorPrimary" />
             </FrameLayout>
@@ -263,7 +263,7 @@
             android:id="@+id/imgProgressFan"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="@drawable/ic_onlyfan"
+            android:src="@drawable/ic_bird"
             app:tint="@color/colorPrimary" />
 
     </FrameLayout>
